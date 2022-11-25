@@ -1,0 +1,10 @@
+.main-nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+}
