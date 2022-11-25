@@ -1,10 +1,24 @@
-.main-nav-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+* {
+    box-sizing: border-box;
 }
 
-.logo {
-    position: relative;
+div {
+    border: 1px solid black;
+}
+
+.main-container {
+    display: grid;
+    grid-template-areas: 'header-Area header-Area header-Area' 'main-Area main-Area main-Area' 'footer-Area footer-Area footer-Area';
+}
+
+.header {
+    grid-area: "header-Area";
+}
+
+.main {
+    grid-area: "main-Area";
+}
+
+.footer {
+    grid-area: "footer-Area";
 }
