@@ -18,17 +18,6 @@
     --border: .1rem solid rgba(0, 0, 0, .1);
 }
 
-html {
-    font-size: 62.5%;
-    overflow-x: hidden;
-    /* difference between rem and em: -
-        1. em is a CSS unit relative to the font size of the parent element, while rem is a CSS unit relative to the 
-           font size of an html element. 
-        2. Both of these are scalable units, meaning they give us the ability to scale elements up and down, relative to a set value.
-       ; */
-    scroll-padding: 7rem;
-    scroll-behavior: smooth;
-}
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -44,4 +33,66 @@ html {
        2. all: means apply this on all css properties
        3. .2s: duration of transition
     */
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    /* difference between rem and em: -
+        1. em is a CSS unit relative to the font size of the parent element, while rem is a CSS unit relative to the 
+           font size of an html element. 
+        2. Both of these are scalable units, meaning they give us the ability to scale elements up and down, relative to a set value.
+       ; */
+    scroll-padding: 7rem;
+    scroll-behavior: smooth;
+}
+
+
+.header {
+    position: fixed;
+    /* 1. The top property affects the vertical position of a positioned element. This property has no effect on non-positioned elements.
+       2. If position: absolute; or position: fixed; - the top property sets the top edge of an element to a unit above/below the top 
+       edge of its nearest positioned ancestor. 
+    */
+    top: 0;
+    /* 
+        1. The left or right property affects the horizontal position of a positioned element.
+        2. If position: absolute; or position: fixed; - the left property sets the left edge of an element to a unit to the left of the left edge of its nearest positioned ancestor.
+         */
+    left: 0;
+    right: 0;
+    /* 
+    - z-index is the CSS property that controls the stacking order of overlapping elements on a page. 
+    - An element with a higher z-index value will appear in front of an element with a lower z-index value.
+    */
+    z-index: 999;
+    /* 
+    - justify-content — controls alignment of all items on the main axis. 
+    - align-items — controls alignment of all items on the cross axis 
+    */
+    display: flex;
+    background: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 9%;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: bolder;
+}
+
+.header .logo span {
+    color: var(--yellow);
+}
+
+.header .navbar a {
+    color: var(--black);
+    font-size: 1.7rem;
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover {
+    color: var(--yellow);
 }
