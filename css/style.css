@@ -124,7 +124,12 @@ html {
     cursor: pointer;
 }
 
-
+#menu-btn {
+    font-size: 2.5rem;
+    color: var(--light-color);
+    cursor: pointer;
+    display: none;
+}
 
 /* @Media Queries */
 /* 
@@ -162,12 +167,26 @@ html {
         right: 0;
         background-color: #fff;
         border-top: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 
     .header .navbar a {
         display: block;
         font-size: 2rem;
         margin: 2rem;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    #menu-btn.fa-times {
+        color: #130f40;
+        transform: rotate(180deg);
     }
 
 }
