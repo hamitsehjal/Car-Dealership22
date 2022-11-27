@@ -7,3 +7,29 @@ menu.onclick = () => {
     navbar.classList.toggle("active");
 
 }
+
+window.onscroll = () => {
+    // The read-only scrollY property of the Window interface returns the number of pixels that the document is currently scrolled vertically
+
+    if (window.scrollY > 0) {
+        document.querySelector('.header').classList.add('active');
+    } else {
+        document.querySelector('.header').classList.remove('active');
+    }
+    menu.classList.remove("fa-times");
+    navbar.classList.remove("active");
+
+}
+
+window.onload = () => {
+    // The read-only scrollY property of the Window interface returns the number of pixels that the document is currently scrolled vertically
+
+    if (window.scrollY > 0) {
+        document.querySelector('.header').classList.add('active');
+    } else {
+        document.querySelector('.header').classList.remove('active');
+    }
+
+
+}
+

@@ -131,6 +131,15 @@ html {
     display: none;
 }
 
+/* body {
+    height: 300rem;
+} */
+
+.header.active {
+    box-shadow: var(--box-shadow);
+    padding: 2rem 9%;
+}
+
 /* @Media Queries */
 /* 
     - Media queries allow you to apply CSS styles depending on a device's general type (such as print vs. screen) or other
@@ -146,6 +155,10 @@ html {
 
     .header {
         padding: 2rem;
+    }
+
+    .header.active {
+        padding: 2rem ;
     }
 
 }
