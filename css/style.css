@@ -123,3 +123,57 @@ html {
     margin: 1px;
     cursor: pointer;
 }
+
+
+
+/* @Media Queries */
+/* 
+    - Media queries allow you to apply CSS styles depending on a device's general type (such as print vs. screen) or other
+    - characteristics such as screen resolution or browser viewport width
+
+*/
+
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+}
+
+@media(max-width:768px) {
+    .header #login-btn i {
+        display: block;
+    }
+
+    .header #login-btn .btn {
+        display: none;
+    }
+
+    .header .navbar {
+        /* An element with position: absolute; is positioned relative to the nearest positioned ancestor */
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        border-top: var(--border);
+    }
+
+    .header .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 2rem;
+    }
+
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+}
