@@ -18,6 +18,18 @@
     --border: .1rem solid rgba(0, 0, 0, .1);
 }
 
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    /* difference between rem and em: -
+        1. em is a CSS unit relative to the font size of the parent element, while rem is a CSS unit relative to the 
+           font size of an html element. 
+        2. Both of these are scalable units, meaning they give us the ability to scale elements up and down, relative to a set value.
+       ; */
+    scroll-padding: 7rem;
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
