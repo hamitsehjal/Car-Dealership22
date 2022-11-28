@@ -16,6 +16,7 @@ menu.onclick = () => {
 
 }
 
+
 window.onscroll = () => {
     // The read-only scrollY property of the Window interface returns the number of pixels that the document is currently scrolled vertically
 
@@ -40,6 +41,36 @@ window.onload = () => {
 
     }
 
+
+}
+
+document.querySelector(".home").onmousemove = (e) => {
+    document.querySelectorAll('.home-parallax').forEach(elem => {
+        let speed = elem.getAttribute('data-speed');
+        // The read-only Window property innerWidth returns the interior width of the window in pixels.
+        //  This includes the width of the vertical scroll bar, if one is present.
+
+        // The pageX read-only property of the MouseEvent interface returns the X (horizontal) coordinate (in pixels) 
+        // at which the mouse was clicked,  relative to the left edge of the entire document.
+        let x = (window.innerWidth - e.pageX * speed) / 90;
+        let y = (window.innerHeight - e.pageY * speed) / 90;
+
+        // The translate() CSS function repositions an element in the horizontal and/or vertical directions.
+        // Note: translateX(tx) is equivalent to translate(tx, 0) or translate3d(tx, 0, 0).
+        elem.style.transform = `translateX(${y}px) translateY(${x}px)`;
+        // elem.style.transform = `translate(${y}px,${x}px)`;
+    })
+
+}
+
+
+document.querySelector(".home").onmouseleave = () => {
+    document.querySelectorAll('.home-parallax').forEach(elem => {
+
+
+        elem.style.transform = `translateX(0px) translateY(0px)`;
+        // elem.style.transform = `translate(0px,0px)`;
+    })
 
 }
 
