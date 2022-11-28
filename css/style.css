@@ -47,6 +47,11 @@ html {
     scroll-behavior: smooth;
 }
 
+
+section {
+    padding: 2rem 9%;
+}
+
 .btn {
     display: inline-block;
     margin-top: 1rem;
@@ -148,7 +153,7 @@ html {
     z-index: 1000;
     height: 100%;
     width: 100%;
-    background-color: rgba(255, 255, 255,0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     /* 0.9 is for opacity */
     display: flex;
     align-items: center;
@@ -225,6 +230,28 @@ html {
     cursor: pointer;
 }
 
+.home {
+    padding-top: 10rem;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.home h1 {
+    text-transform: uppercase;
+    /* vw: 
+       The full form of VW is viewport width. It works like the percentage unit. 
+       Specifying 10vw is equivalent to occupying 10% of entire visible screen width. 
+    */
+    font-size: 7.5vw;
+    color: var(--black)
+}
+
+.home img {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+
 /* @Media Queries */
 /* 
     - Media queries allow you to apply CSS styles depending on a device's general type (such as print vs. screen) or other
@@ -237,7 +264,9 @@ html {
         font-size: 55%;
 
     }
-
+    section {
+        padding: 2rem;
+    }
     .header {
         padding: 2rem;
     }
