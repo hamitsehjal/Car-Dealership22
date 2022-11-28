@@ -1,17 +1,16 @@
 let menu = document.querySelector("#menu-btn");
 let navbar = document.querySelector(".navbar");
 
-let login=document.querySelector("#login-close-btn");
-let form=document.querySelector('form');
 
-login.onclick=()=>{
-    login.classList.toggle("fa-times");
-    form.classList.toggle("active");
+document.querySelector("#login-btn").onclick = () => {
+    document.querySelector(".login-form-container").classList.toggle("active");
 }
 
+document.querySelector("#login-close-btn").onclick = () => {
+    document.querySelector(".login-form-container").classList.remove("active");
+}
 
 menu.onclick = () => {
-    // menu.classList.toggle("fa-circle-xmark");
     menu.classList.toggle("fa-times");
     navbar.classList.toggle("active");
 
@@ -35,10 +34,8 @@ window.onload = () => {
 
     if (window.scrollY > 0) {
         document.querySelector('.header').classList.add('active');
-        document.querySelector('form').classList.remove('active');
     } else {
         document.querySelector('.header').classList.remove('active');
-        document.querySelector('form').classList.add('active');
 
 
     }
