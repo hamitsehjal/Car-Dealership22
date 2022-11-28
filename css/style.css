@@ -252,6 +252,80 @@ section {
 }
 
 
+.icons-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: grid;
+    /* 
+    -What is repeat in grid-template-columns?
+    repeat() The repeat() CSS function represents a repeated fragment of the track list, allowing a large number of 
+    columns or rows that exhibit a recurring pattern to be written in a more compact form 
+    */
+    /* 
+    -The auto-fit keyword automatically inserts columns and rows into a grid container but when the grid items in our code 
+    cannot occupy the entire row width of the container, the auto-fit keyword stretches (instead of adding empty tracks) each 
+    grid item to entirely fit its available space. 
+    */
+    /* 
+    -The minmax() CSS function defines a size range greater than or equal to min and less than or equal to max. It is used
+     with CSS Grids.
+    */
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    gap: 1.5rem;
+    background: #eee;
+}
+
+.icons-container .icons {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+.icons-container .icons i {
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: var(--black);
+    background: #eee;
+    text-align: center;
+
+}
+
+.icons-container .icons .content h3{
+    color:var(--yellow);
+    font-size: 2.5rem;
+}
+
+.icons-container .icons .content p{
+    color:var(--light-color);
+    font-size: 1.5rem;
+}
+
+
+
+
+.icons-container .icons:hover{
+    background: var(--black);
+}
+.icons-container .icons:hover i{
+    background: var(--yellow);
+}
+.icons-container .icons:hover .content h3{
+    color: #fff;
+}
+.icons-container .icons:hover .content p{
+    color: #eee;
+}
+
+
+
 /* @Media Queries */
 /* 
     - Media queries allow you to apply CSS styles depending on a device's general type (such as print vs. screen) or other
@@ -264,9 +338,11 @@ section {
         font-size: 55%;
 
     }
+
     section {
         padding: 2rem;
     }
+
     .header {
         padding: 2rem;
     }
