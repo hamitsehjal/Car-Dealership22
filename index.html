@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Swiper Link -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
         <!-- Font Awesome cdn link -->
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -107,9 +110,9 @@
 
         <section class="vehilces" id="vehicles">
             <h1 class="heading">Popular<span>Vehicles</span></h1>
-            <div class="vehicles-slider">
-                <div class="wrapper">
-                    <div class="box">
+            <div class="swiper vehicles-slider">
+                <div class="swiper-wrapper wrapper">
+                    <div class="swiper-slide box">
                         <img src="./pics/vehicle-1.png" alt="vehicle-1">
                         <div class="content">
                             <h3>New Model</h3>
@@ -125,7 +128,7 @@
                             <a href="#" class="btn">Check Out!!</a>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="swiper-slide box">
                         <img src="./pics/vehicle-2.png" alt="vehicle-2">
                         <div class="content">
                             <h3>New Model</h3>
@@ -141,7 +144,7 @@
                             <a href="#" class="btn">Check Out!!</a>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="swiper-slide box">
                         <img src="./pics/vehicle-3.png" alt="vehicle-3">
                         <div class="content">
                             <h3>New Model</h3>
@@ -157,7 +160,7 @@
                             <a href="#" class="btn">Check Out!!</a>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="swiper-slide box">
                         <img src="./pics/vehicle-4.png" alt="vehicle-4">
                         <div class="content">
                             <h3>New Model</h3>
@@ -173,7 +176,7 @@
                             <a href="#" class="btn">Check Out!!</a>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="swiper-slide box">
                         <img src="./pics/vehicle-5.png" alt="vehicle-5">
                         <div class="content">
                             <h3>New Model</h3>
@@ -189,7 +192,7 @@
                             <a href="#" class="btn">Check Out!!</a>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="swiper-slide box">
                         <img src="./pics/vehicle-6.png" alt="vehicle-6">
                         <div class="content">
                             <h3>New Model</h3>
@@ -206,13 +209,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
         <!-- Vehicles Section Ends -->
 
 
-
-
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="./logic.js"></script>
     </body>
 
