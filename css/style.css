@@ -378,15 +378,14 @@ section {
     /* opacity: 0;  */
     padding-top: 1rem;
 }
-.vehilces .vehicles-slider .swiper-slide-active img
-{
+
+.vehilces .vehicles-slider .swiper-slide-active img {
     transform: scale(1.2);
     opacity: 1;
 
 }
 
-.vehilces .vehicles-slider .swiper-slide-active .content
-{
+.vehilces .vehicles-slider .swiper-slide-active .content {
     transform: scale(1);
 
 }
@@ -404,30 +403,59 @@ section {
     pad: 1rem 0;
 }
 
-.vehilces .vehicles-slider .box .content .price span{
+.vehilces .vehicles-slider .box .content .price span {
     font-size: 1.7rem;
     color: var(--light-color);
     font-weight: normal;
 }
 
-.vehilces .vehicles-slider .box .content p{
+.vehilces .vehicles-slider .box .content p {
     font-size: 1.5rem;
     padding: 1rem;
     padding-top: 1.5rem;
-    border-top:var(--border);
+    border-top: var(--border);
     color: var(--light-color);
-   
+
 }
 
 
-.vehilces .vehicles-slider .box .content p span{
+.vehilces .vehicles-slider .box .content p span {
     font-size: 0.7rem;
-    color:var(--yellow);
+    color: var(--yellow);
     padding: .5rem;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
     background-color: var(--yellow);
+}
+
+
+
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.services .box-container .box {
+    text-align: center;
+    background: #eee;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    border: var(--border);
+}
+
+.services .box-container .box i {
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: var(--black);
+    background: var(--yellow);
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 /* @Media Queries */
@@ -502,7 +530,8 @@ section {
     html {
         font-size: 50%;
     }
-    .heading{
+
+    .heading {
         font-size: 3rem;
     }
 }
