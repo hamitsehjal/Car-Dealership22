@@ -439,7 +439,7 @@ section {
 
 .services .box-container .box {
     text-align: center;
-    background: #eee;
+    /* background: #eee; */
     padding: 2rem;
     box-shadow: var(--box-shadow);
     border-radius: .5rem;
@@ -457,6 +457,34 @@ section {
     text-align: center;
     margin-bottom: 1rem;
 }
+
+.services .box-container .box h3 {
+    font-size: 2.2rem;
+    color: var(--black);
+}
+
+.services .box-container .box p {
+    font-size: 1.4rem;
+    color: var(--light-color);
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+
+.services .box-container .box:hover {
+    background-color: var(--black);
+}
+
+.services .box-container .box:hover h3 {
+    color: #fff;
+}
+
+.services .box-container .box:hover p {
+    color: #eee;
+}
+
+
+
 
 /* @Media Queries */
 /* 
