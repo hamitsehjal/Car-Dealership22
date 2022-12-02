@@ -484,8 +484,45 @@ section {
 }
 
 
+.featured .featured-slider {
+    padding: 1rem;
+    padding-bottom: 5rem;
+}
+
+.featured .featured-slider .box {
+    text-align: center;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
 
 
+.featured .featured-slider .box img {
+    height: 15rem;
+}
+
+.featured .featured-slider .box:hover img {
+    transform: scale(0.8);
+}
+
+.featured .featured-slider .box h3 {
+    font-size: 2.2rem;
+    color: var(--black);
+}
+
+.featured .featured-slider .box .stars {
+    padding: 1rem 0;
+}
+
+.featured .featured-slider .box .stars i{
+    font-size: 2rem;
+    color:var(--yellow);
+}
+.featured .featured-slider .box .price{
+    color:var(--black);
+}
 /* @Media Queries */
 /* 
     - Media queries allow you to apply CSS styles depending on a device's general type (such as print vs. screen) or other
