@@ -500,7 +500,9 @@ section {
 
 
 .featured .featured-slider .box img {
-    height: 15rem;
+    /* height: 15rem; */
+    width: 60%;
+    padding: 2rem;
 }
 
 .featured .featured-slider .box:hover img {
@@ -516,13 +518,77 @@ section {
     padding: 1rem 0;
 }
 
-.featured .featured-slider .box .stars i{
+.featured .featured-slider .box .stars i {
     font-size: 2rem;
-    color:var(--yellow);
+    color: var(--yellow);
 }
-.featured .featured-slider .box .price{
-    color:var(--black);
+
+.featured .featured-slider .box .price {
+    color: var(--black);
 }
+
+
+
+.newsletter {
+    padding: 6rem 2rem;
+    background: url(../pics/letter-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.newsletter h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.newsletter p {
+    font-size: 1.2rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.newsletter form {
+    height: 5rem;
+    max-width: 60rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+    margin: 1rem auto;
+    display: flex;
+    overflow: hidden;
+    background: #fff;
+}
+
+.newsletter form input[type="email"] {
+    height: 100%;
+    width: 100%;
+    padding: 0 2rem;
+    font: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+
+}
+
+.newsletter form input:focus {
+    outline: none;
+}
+
+.newsletter form input[type="submit"] {
+    height: 100%;
+    width: 17rem;
+    font-size: 1.7rem;
+    color: var(--black);
+    background: var(--light-yellow);
+    cursor: pointer;
+}
+
+.newsletter form input[type="submit"]:hover {
+    background: var(--yellow);
+}
+
+
+
+
 /* @Media Queries */
 /* 
     - Media queries allow you to apply CSS styles depending on a device's general type (such as print vs. screen) or other
