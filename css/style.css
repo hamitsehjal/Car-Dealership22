@@ -605,7 +605,7 @@ section {
 .reviews .reviews-slider .swiper-slide-active {
 
     box-shadow: var(--box-shadow);
-    border:var(--border);
+    border: var(--border);
     opacity: 1;
     transform: scale(1);
 
@@ -635,30 +635,42 @@ section {
     color: var(--yellow);
 }
 
-.contact .row{
+.contact .row {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
 
 }
 
-.contact .row .map{
-    flex:1 1 42rem;
+.contact .row .map {
+    flex: 1 1 42rem;
     padding: 1.5rem;
     border-radius: .5rem;
     border: var(--border);
     box-shadow: var(--box-shadow);
 }
 
-.contact .row form{
-    flex:1 1 42rem;
+.contact .row form {
+    flex: 1 1 42rem;
     padding: 1.5rem;
     border-radius: .5rem;
     border: var(--border);
     box-shadow: var(--box-shadow);
 }
 
-
+.contact .row form h3{
+    color: var(--black);
+    font-size: 2.5rem;
+}
+.contact .row form .box {
+    width: 100%;
+    border: var(--border);
+    margin: .7rem 0;
+    font-size: 2rem;
+    color:var(--black);
+    padding: 1rem;
+    border-radius: .5rem;
+}
 
 
 
