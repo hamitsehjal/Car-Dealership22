@@ -638,9 +638,31 @@ section {
 .contact .row{
     display: flex;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 1.5rem;
 
 }
+
+.contact .row .map{
+    flex:1 1 42rem;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+}
+
+.contact .row form{
+    flex:1 1 42rem;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+}
+
+
+
+
+
+
 
 /* @Media Queries */
 /* 
