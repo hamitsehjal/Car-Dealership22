@@ -659,28 +659,71 @@ section {
     text-align: center;
 }
 
-.contact .row form h3{
+.contact .row form h3 {
     color: var(--black);
     font-size: 2.5rem;
 }
+
 .contact .row form .box {
     width: 100%;
     border: var(--border);
     margin: .7rem 0;
     font-size: 2rem;
-    color:var(--black);
+    color: var(--black);
     padding: 1rem;
     border-radius: .5rem;
     text-transform: none;
 }
 
 
-.contact .row form textarea{
+.contact .row form textarea {
     height: 15rem;
     resize: none;
 }
 
+.footer {
+    background-color: var(--light-yellow);
+}
 
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    color: var(--black);
+    font-size: 2.2rem;
+    padding: 1rem 0;
+
+}
+
+.footer .box-container .box a {
+    color: var(--light-color);
+    font-size: 1.4rem;
+    display: block;
+
+}
+
+.footer .box-container .box a i{
+    color: var(--black);
+    padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover i{
+    color: var(--black);
+    padding-right: 2rem;
+}
+
+.footer .credit{
+    text-align: center;
+    padding:1.5rem;
+    padding-top: 2.5rem;
+    margin-top: 2rem;
+    border-top: var(--border);
+    font-size: 2rem;
+    color:var(--black);
+}
 
 
 /* @Media Queries */
