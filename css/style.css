@@ -635,7 +635,12 @@ section {
     color: var(--yellow);
 }
 
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
 
+}
 
 /* @Media Queries */
 /* 
