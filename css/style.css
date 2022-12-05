@@ -94,7 +94,7 @@ section {
     border-radius: .5rem;
   
     background: var(--green);
-    color: var(--black-dark);
+    color: var(--blue);
     font-weight: 500;
     font-size: 1.7rem;
     padding: 1rem 2rem;
@@ -157,6 +157,7 @@ section {
 
 .header .navbar a:hover {
     color: var(--green);
+    font-size:2rem;
 }
 
 .header .btn {
@@ -178,9 +179,9 @@ section {
     display: none;
 }
 
-/* 
-/* body {
-    /* height: 300rem; */
+body{
+    background-color: var(--white-ligt);
+}
 
 .header.active {
     box-shadow: var(--box-shadow);
@@ -284,7 +285,7 @@ section {
        The full form of VW is viewport width. It works like the percentage unit. 
        Specifying 10vw is equivalent to occupying 10% of entire visible screen width. 
     */
-    font-size: 7.5vw;
+    font-size: 5.5vw;
     color: var(--black-dark)
 }
 
@@ -592,12 +593,13 @@ section {
     width: 17rem;
     font-size: 1.7rem;
     color: var(--black-dark);
-    background: var(--blue);
+    background: var(--green);
     cursor: pointer;
 }
 
 .newsletter form input[type="submit"]:hover {
-    background: var(--green);
+    background: var(--blue);
+    color:var(--white-ligt);
 }
 
 
@@ -696,7 +698,8 @@ section {
 }
 
 .footer {
-    background-color: var(--blue);
+    background-color: var(--green);
+    background-color:#6495ED;
 }
 
 .footer .box-container {
