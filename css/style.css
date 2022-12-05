@@ -10,10 +10,17 @@
      Custom css variable: They are set using custom property notation (e.g., --main-color: black;) and are accessed using the 
      var() function (e.g., color: var(--main-color);). 
     */
-    --yellow: #f9d806;
-    --light-yellow: #ffee80;
-    --black: #130f40;
+    --green: #0BDA51;
+    --blue: #05386b;
+    --black-dark: #010A10;
+    --black-light: #211D21;
     --light-color: #666;
+    --white-dark: #DFE2DB;
+    --white-ligt: #FFFBF2;
+    /* --green: #6F2232;
+    --ligh-yellow: #950740;
+    --black-dark: #1A1A1D;
+    --light-color: #4E4E50; */
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     --border: .1rem solid rgba(0, 0, 0, .1);
 }
@@ -45,6 +52,7 @@ html {
        ; */
     scroll-padding: 7rem;
     scroll-behavior: smooth;
+
 }
 
 
@@ -55,7 +63,7 @@ section {
 .heading {
     text-align: center;
     font-size: 4rem;
-    color: var(--black);
+    color: var(--black-dark);
     padding-bottom: 2rem;
 }
 
@@ -74,7 +82,7 @@ section {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: var(--yellow);
+    background: var(--green);
     /* To understand clip-path: https://ishadeed.com/article/clip-path/#:~:text=The%20clip-path%20values%201%20Inset%20The%20inset%20value,the%20most%20interesting%20one.%20...%205%20Path%20 */
     clip-path: polygon(0% 90%, 100% 40%, 100% 100%, 0% 100%);
 }
@@ -84,8 +92,9 @@ section {
     display: inline-block;
     margin-top: 1rem;
     border-radius: .5rem;
-    background: var(--light-yellow);
-    color: var(--black);
+  
+    background: var(--green);
+    color: var(--black-dark);
     font-weight: 500;
     font-size: 1.7rem;
     padding: 1rem 2rem;
@@ -93,7 +102,8 @@ section {
 }
 
 .btn:hover {
-    background: var(--yellow);
+    background: var(--blue);
+    color:var(--white-dark);
 }
 
 .header {
@@ -127,22 +137,26 @@ section {
 
 .header .logo {
     font-size: 2.5rem;
-    color: var(--black);
+    color: var(--white-dark);
+    color:var(--blue);
     font-weight: bolder;
 }
 
 .header .logo span {
-    color: var(--yellow);
+    color: var(--green);
+    font-size: 4rem;
+    font-weight: bolder;
+
 }
 
 .header .navbar a {
-    color: var(--black);
+    color: var(--black-dark);
     font-size: 1.7rem;
     margin: 0 1rem;
 }
 
 .header .navbar a:hover {
-    color: var(--yellow);
+    color: var(--green);
 }
 
 .header .btn {
@@ -164,9 +178,9 @@ section {
     display: none;
 }
 
+/* 
 /* body {
-    height: 300rem;
-} */
+    /* height: 300rem; */
 
 .header.active {
     box-shadow: var(--box-shadow);
@@ -222,7 +236,7 @@ section {
 .login-form-container h3 {
     font-size: 2.5rem;
     text-transform: uppercase;
-    color: var(--black);
+    color: var(--black-dark);
     padding-bottom: 1rem;
 }
 
@@ -245,14 +259,14 @@ section {
 
 .login-form-container form p a {
     text-decoration: underline;
-    color: var(--yellow);
+    color: var(--green);
 
 }
 
 #login-close-btn {
     position: absolute;
     font-size: 5rem;
-    color: var(--black);
+    color: var(--black-dark);
     top: 1.5rem;
     right: 2.5rem;
     cursor: pointer;
@@ -271,7 +285,7 @@ section {
        Specifying 10vw is equivalent to occupying 10% of entire visible screen width. 
     */
     font-size: 7.5vw;
-    color: var(--black)
+    color: var(--black-dark)
 }
 
 .home img {
@@ -320,14 +334,14 @@ section {
     line-height: 6rem;
     font-size: 2.5rem;
     border-radius: 50%;
-    color: var(--black);
+    color: var(--black-dark);
     background: #eee;
     text-align: center;
 
 }
 
 .icons-container .icons .content h3 {
-    color: var(--yellow);
+    color: var(--green);
     font-size: 2.5rem;
 }
 
@@ -340,11 +354,11 @@ section {
 
 
 .icons-container .icons:hover {
-    background: var(--black);
+    background: var(--black-dark);
 }
 
 .icons-container .icons:hover i {
-    background: var(--yellow);
+    background: var(--green);
 }
 
 .icons-container .icons:hover .content h3 {
@@ -392,13 +406,13 @@ section {
 
 .vehilces .vehicles-slider .box .content h3 {
     font-size: 2.5rem;
-    color: var(--black);
+    color: var(--black-dark);
 }
 
 
 .vehilces .vehicles-slider .box .content .price {
     font-size: 2.5rem;
-    color: var(--yellow);
+    color: var(--green);
     font-weight: bolder;
     pad: 1rem 0;
 }
@@ -421,12 +435,12 @@ section {
 
 .vehilces .vehicles-slider .box .content p span {
     font-size: 0.7rem;
-    color: var(--yellow);
+    color: var(--green);
     padding: .5rem;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: var(--yellow);
+    background-color: var(--green);
 }
 
 
@@ -452,15 +466,15 @@ section {
     line-height: 6rem;
     font-size: 2.5rem;
     border-radius: 50%;
-    color: var(--black);
-    background: var(--yellow);
+    color: var(--black-dark);
+    background: var(--green);
     text-align: center;
     margin-bottom: 1rem;
 }
 
 .services .box-container .box h3 {
     font-size: 2.2rem;
-    color: var(--black);
+    color: var(--black-dark);
 }
 
 .services .box-container .box p {
@@ -472,7 +486,7 @@ section {
 
 
 .services .box-container .box:hover {
-    background-color: var(--black);
+    background-color: var(--black-dark);
 }
 
 .services .box-container .box:hover h3 {
@@ -511,7 +525,7 @@ section {
 
 .featured .featured-slider .box h3 {
     font-size: 2.2rem;
-    color: var(--black);
+    color: var(--black-dark);
 }
 
 .featured .featured-slider .box .stars {
@@ -520,11 +534,11 @@ section {
 
 .featured .featured-slider .box .stars i {
     font-size: 2rem;
-    color: var(--yellow);
+    color: var(--green);
 }
 
 .featured .featured-slider .box .price {
-    color: var(--black);
+    color: var(--black-dark);
 }
 
 
@@ -539,7 +553,7 @@ section {
 
 .newsletter h3 {
     font-size: 2.5rem;
-    color: var(--black);
+    color: var(--black-dark);
 }
 
 .newsletter p {
@@ -564,7 +578,7 @@ section {
     width: 100%;
     padding: 0 2rem;
     font: 1.6rem;
-    color: var(--black);
+    color: var(--black-dark);
     text-transform: none;
 
 }
@@ -577,13 +591,13 @@ section {
     height: 100%;
     width: 17rem;
     font-size: 1.7rem;
-    color: var(--black);
-    background: var(--light-yellow);
+    color: var(--black-dark);
+    background: var(--blue);
     cursor: pointer;
 }
 
 .newsletter form input[type="submit"]:hover {
-    background: var(--yellow);
+    background: var(--green);
 }
 
 
@@ -621,18 +635,18 @@ section {
 
 .reviews .reviews-slider .box .content p {
     font-size: 1.4rem;
-    color: var(--black);
+    color: var(--black-dark);
 }
 
 .reviews .reviews-slider .box .content h3 {
     font-size: 2.2rem;
-    color: var(--black);
+    color: var(--black-dark);
     padding-bottom: .5rem;
 }
 
 .reviews .reviews-slider .box .content .stars {
     font-size: 2.2rem;
-    color: var(--yellow);
+    color: var(--green);
 }
 
 .contact .row {
@@ -660,7 +674,7 @@ section {
 }
 
 .contact .row form h3 {
-    color: var(--black);
+    color: var(--black-dark);
     font-size: 2.5rem;
 }
 
@@ -669,7 +683,7 @@ section {
     border: var(--border);
     margin: .7rem 0;
     font-size: 2rem;
-    color: var(--black);
+    color: var(--black-dark);
     padding: 1rem;
     border-radius: .5rem;
     text-transform: none;
@@ -682,7 +696,7 @@ section {
 }
 
 .footer {
-    background-color: var(--light-yellow);
+    background-color: var(--blue);
 }
 
 .footer .box-container {
@@ -692,7 +706,7 @@ section {
 }
 
 .footer .box-container .box h3 {
-    color: var(--black);
+    color: var(--black-dark);
     font-size: 2.2rem;
     padding: 1rem 0;
 
@@ -705,24 +719,24 @@ section {
 
 }
 
-.footer .box-container .box a i{
-    color: var(--black);
+.footer .box-container .box a i {
+    color: var(--black-dark);
     padding-right: .5rem;
 }
 
-.footer .box-container .box a:hover i{
-    color: var(--black);
+.footer .box-container .box a:hover i {
+    color: var(--black-dark);
     padding-right: 2rem;
 }
 
-.footer .credit{
+.footer .credit {
     text-align: center;
-    padding:1.5rem;
+    padding: 1.5rem;
     padding-top: 2.5rem;
     margin-top: 2rem;
     border-top: var(--border);
     font-size: 2rem;
-    color:var(--black);
+    color: var(--black-dark);
 }
 
 
