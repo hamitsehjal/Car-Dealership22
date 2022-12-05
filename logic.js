@@ -44,24 +44,24 @@ window.onload = () => {
 
 }
 
-document.querySelector(".home").onmousemove = (e) => {
-    document.querySelectorAll('.home-parallax').forEach(elem => {
-        let speed = elem.getAttribute('data-speed');
-        // The read-only Window property innerWidth returns the interior width of the window in pixels.
-        //  This includes the width of the vertical scroll bar, if one is present.
+// document.querySelector(".home").onmousemove = (e) => {
+//     document.querySelectorAll('.home-parallax').forEach(elem => {
+//         let speed = elem.getAttribute('data-speed');
+//         // The read-only Window property innerWidth returns the interior width of the window in pixels.
+//         //  This includes the width of the vertical scroll bar, if one is present.
 
-        // The pageX read-only property of the MouseEvent interface returns the X (horizontal) coordinate (in pixels) 
-        // at which the mouse was clicked,  relative to the left edge of the entire document.
-        let x = (window.innerWidth - e.pageX * speed) / 90;
-        let y = (window.innerHeight - e.pageY * speed) / 90;
+//         // The pageX read-only property of the MouseEvent interface returns the X (horizontal) coordinate (in pixels) 
+//         // at which the mouse was clicked,  relative to the left edge of the entire document.
+//         let x = (window.innerWidth - e.pageX * speed) / 90;
+//         let y = (window.innerHeight - e.pageY * speed) / 90;
 
-        // The translate() CSS function repositions an element in the horizontal and/or vertical directions.
-        // Note: translateX(tx) is equivalent to translate(tx, 0) or translate3d(tx, 0, 0).
-        elem.style.transform = `translateX(${y}px) translateY(${x}px)`;
-        // elem.style.transform = `translate(${y}px,${x}px)`;
-    })
+//         // The translate() CSS function repositions an element in the horizontal and/or vertical directions.
+//         // Note: translateX(tx) is equivalent to translate(tx, 0) or translate3d(tx, 0, 0).
+//         elem.style.transform = `translateX(${y}px) translateY(${x}px)`;
+//         // elem.style.transform = `translate(${y}px,${x}px)`;
+//     })
 
-}
+// }
 
 
 document.querySelector(".home").onmouseleave = () => {

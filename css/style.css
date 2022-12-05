@@ -92,7 +92,7 @@ section {
     display: inline-block;
     margin-top: 1rem;
     border-radius: .5rem;
-  
+
     background: var(--green);
     color: var(--blue);
     font-weight: 500;
@@ -103,7 +103,7 @@ section {
 
 .btn:hover {
     background: var(--blue);
-    color:var(--white-dark);
+    color: var(--white-dark);
 }
 
 .header {
@@ -138,7 +138,7 @@ section {
 .header .logo {
     font-size: 2.5rem;
     color: var(--white-dark);
-    color:var(--blue);
+    color: var(--blue);
     font-weight: bolder;
 }
 
@@ -157,7 +157,7 @@ section {
 
 .header .navbar a:hover {
     color: var(--green);
-    font-size:2rem;
+    font-size: 2rem;
 }
 
 .header .btn {
@@ -179,7 +179,7 @@ section {
     display: none;
 }
 
-body{
+body {
     background-color: var(--white-ligt);
 }
 
@@ -291,6 +291,8 @@ body{
 
 .home img {
     width: 100%;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
     margin: 1rem 0;
 }
 
@@ -599,7 +601,7 @@ body{
 
 .newsletter form input[type="submit"]:hover {
     background: var(--blue);
-    color:var(--white-ligt);
+    color: var(--white-ligt);
 }
 
 
@@ -699,7 +701,6 @@ body{
 
 .footer {
     background-color: var(--green);
-    background-color:#6495ED;
 }
 
 .footer .box-container {
