@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
 
 /* 
  1. The :root CSS pseudo-class matches the root element of a tree representing the document. 
@@ -27,7 +27,8 @@
 
 
 * {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Signika Negative', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -40,6 +41,7 @@
        2. all: means apply this on all css properties
        3. .2s: duration of transition
     */
+
 }
 
 html {
@@ -93,8 +95,8 @@ section {
     margin-top: 1rem;
     border-radius: .5rem;
 
-    background: var(--green);
-    color: var(--blue);
+    background: var(--blue);
+    color: #FFFF;
     font-weight: 500;
     font-size: 1.7rem;
     padding: 1rem 2rem;
@@ -102,8 +104,8 @@ section {
 }
 
 .btn:hover {
-    background: var(--blue);
-    color: var(--white-dark);
+    background: var(--green);
+    /* color: var(--white-dark); */
 }
 
 .header {
@@ -136,28 +138,31 @@ section {
 }
 
 .header .logo {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--white-dark);
-    color: var(--blue);
+    color: var(--green);
     font-weight: bolder;
+    font-family: 'Signika Negative', sans-serif;
+
 }
 
 .header .logo span {
-    color: var(--green);
-    font-size: 4rem;
+    color: var(--blue);
+    font-size: 4.2rem;
     font-weight: bolder;
 
 }
 
 .header .navbar a {
-    color: var(--black-dark);
-    font-size: 1.7rem;
+    color: var(--blue);
+    font-size: 2rem;
     margin: 0 1rem;
+
 }
 
 .header .navbar a:hover {
     color: var(--green);
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .header .btn {
@@ -179,9 +184,10 @@ section {
     display: none;
 }
 
-body {
+/* body {
     background-color: var(--white-ligt);
-}
+    background-color: var(--blue);
+} */
 
 .header.active {
     box-shadow: var(--box-shadow);
@@ -280,13 +286,29 @@ body {
 }
 
 .home h1 {
+    /* margin-top: 5rem; */
     text-transform: uppercase;
     /* vw: 
        The full form of VW is viewport width. It works like the percentage unit. 
        Specifying 10vw is equivalent to occupying 10% of entire visible screen width. 
     */
-    font-size: 5.5vw;
-    color: var(--black-dark)
+    font-size: 4.7vw;
+    color: var(--blue);
+    font-family: 'Signika Negative', sans-serif;
+
+
+}
+
+.home h1 span{
+    margin-top: 5rem;
+    text-transform: uppercase;
+    /* vw: 
+       The full form of VW is viewport width. It works like the percentage unit. 
+       Specifying 10vw is equivalent to occupying 10% of entire visible screen width. 
+    */
+    font-size: 5vw;
+    color: var(--green);
+    font-family: 'Signika Negative', sans-serif;
 }
 
 .home img {
