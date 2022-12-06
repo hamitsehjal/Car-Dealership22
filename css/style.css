@@ -132,6 +132,7 @@ section {
     */
     display: flex;
     background: #fff;
+    /* background-color: 	#F9F6EE; */
     justify-content: space-between;
     align-items: center;
     padding: 3rem 9%;
@@ -139,7 +140,6 @@ section {
 
 .header .logo {
     font-size: 3rem;
-    color: var(--white-dark);
     color: var(--green);
     font-weight: bolder;
     font-family: 'Signika Negative', sans-serif;
@@ -283,6 +283,7 @@ section {
     padding-top: 10rem;
     text-align: center;
     overflow-x: hidden;
+    /* background-color: 	#F9F6EE; */
 }
 
 .home h1 {
@@ -379,11 +380,12 @@ section {
 
 
 .icons-container .icons:hover {
-    background: var(--black-dark);
+    background: var(--blue);
 }
 
 .icons-container .icons:hover i {
     background: var(--green);
+    color: var(--blue);
 }
 
 .icons-container .icons:hover .content h3 {
@@ -413,6 +415,7 @@ section {
 
 
 .vehilces .vehicles-slider .box .content {
+    margin-top: 2rem;
     transform: scale(0);
     /* opacity: 0;  */
     padding-top: 1rem;
@@ -474,6 +477,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
+    
 }
 
 .services .box-container .box {
@@ -508,10 +512,13 @@ section {
     line-height: 1.8;
     padding: 1rem 0;
 }
+.services .box-container .box:hover .btn {
+    background-color: var(--green);
+}
 
 
 .services .box-container .box:hover {
-    background-color: var(--black-dark);
+    background-color: var(--blue);
 }
 
 .services .box-container .box:hover h3 {
@@ -559,7 +566,7 @@ section {
 
 .featured .featured-slider .box .stars i {
     font-size: 2rem;
-    color: var(--green);
+    color: #FDDA0D;
 }
 
 .featured .featured-slider .box .price {
@@ -672,7 +679,7 @@ section {
 
 .reviews .reviews-slider .box .content .stars {
     font-size: 2.2rem;
-    color: var(--green);
+    color: #FDDA0D;
 }
 
 .contact .row {
@@ -722,7 +729,8 @@ section {
 }
 
 .footer {
-    background-color: var(--green);
+    background-color: 	#50C878;
+    color:var(--blue);
 }
 
 .footer .box-container {
@@ -772,8 +780,11 @@ section {
     - characteristics such as screen resolution or browser viewport width
 
 */
-
-@media(max-width:991px) {
+/* @media(max-width:1117px)
+{
+    
+} */
+@media(max-width:1117px) {
     html {
         font-size: 55%;
 
@@ -789,6 +800,18 @@ section {
 
     .header.active {
         padding: 2rem;
+    }
+
+    .header .logo {
+        font-size: 2.7rem;
+    
+    }
+    
+    .header .logo span {
+        color: var(--blue);
+        font-size: 3rem;
+        font-weight:normal;
+    
     }
 
 }
