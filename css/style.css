@@ -10,17 +10,11 @@
      Custom css variable: They are set using custom property notation (e.g., --main-color: black;) and are accessed using the 
      var() function (e.g., color: var(--main-color);). 
     */
-    --green: #0BDA51;
-    --blue: #05386b;
-    --black-dark: #010A10;
-    --black-light: #211D21;
-    --light-color: #666;
-    --white-dark: #DFE2DB;
-    --white-ligt: #FFFBF2;
-    /* --green: #6F2232;
-    --ligh-yellow: #950740;
-    --black-dark: #1A1A1D;
-    --light-color: #4E4E50; */
+
+    --yellow: #f5c71a;
+    --light-yellow: #ffe135;
+    --blue: #1F244B;
+
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     --border: .1rem solid rgba(0, 0, 0, .1);
 }
@@ -95,8 +89,9 @@ section {
     margin-top: 1rem;
     border-radius: .5rem;
 
-    background: var(--blue);
-    color: #FFFF;
+    /* background-color: var(--yellow); */
+    background-color: var(--yellow);
+    color: var(--blue);
     font-weight: 500;
     font-size: 1.7rem;
     padding: 1rem 2rem;
@@ -104,8 +99,7 @@ section {
 }
 
 .btn:hover {
-    background: var(--green);
-    /* color: var(--white-dark); */
+    background-color: var(--light-yellow);
 }
 
 .header {
@@ -131,8 +125,7 @@ section {
     - align-items — controls alignment of all items on the cross axis 
     */
     display: flex;
-    background: #fff;
-    /* background-color: 	#F9F6EE; */
+    background-color: var(--blue);
     justify-content: space-between;
     align-items: center;
     padding: 3rem 9%;
@@ -140,28 +133,28 @@ section {
 
 .header .logo {
     font-size: 3rem;
-    color: var(--green);
-    font-weight: bolder;
+    color: #FFFFFF;
+    /* font-weight: bolder; */
     font-family: 'Signika Negative', sans-serif;
 
 }
 
 .header .logo span {
-    color: var(--blue);
+    color: var(--yellow);
     font-size: 4.2rem;
     font-weight: bolder;
 
 }
 
 .header .navbar a {
-    color: var(--blue);
+    color: #ffffff;
     font-size: 2rem;
     margin: 0 1rem;
 
 }
 
 .header .navbar a:hover {
-    color: var(--green);
+    color: var(--yellow);
     font-size: 2.2rem;
 }
 
@@ -173,13 +166,15 @@ section {
     display: none;
     font-size: 2.5rem;
     color: var(--light-color);
+    color: var(--yellow);
     margin: 1px;
     cursor: pointer;
 }
 
 #menu-btn {
     font-size: 2.5rem;
-    color: var(--light-color);
+    /* color: var(--light-color); */
+    color: var(--yellow);
     cursor: pointer;
     display: none;
 }
@@ -300,7 +295,7 @@ section {
 
 }
 
-.home h1 span{
+.home h1 span {
     margin-top: 5rem;
     text-transform: uppercase;
     /* vw: 
@@ -314,8 +309,8 @@ section {
 
 .home img {
     width: 100%;
-    border: var(--border);
-    box-shadow: var(--box-shadow);
+    /* border: var(--border);
+    box-shadow: var(--box-shadow); */
     margin: 1rem 0;
 }
 
@@ -477,7 +472,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
-    
+
 }
 
 .services .box-container .box {
@@ -512,6 +507,7 @@ section {
     line-height: 1.8;
     padding: 1rem 0;
 }
+
 .services .box-container .box:hover .btn {
     background-color: var(--green);
 }
@@ -729,8 +725,8 @@ section {
 }
 
 .footer {
-    background-color: 	#50C878;
-    color:var(--blue);
+    background-color: #50C878;
+    color: var(--blue);
 }
 
 .footer .box-container {
@@ -804,14 +800,14 @@ section {
 
     .header .logo {
         font-size: 2.7rem;
-    
+
     }
-    
+
     .header .logo span {
-        color: var(--blue);
+        color: var(--yellow);
         font-size: 3rem;
-        font-weight:normal;
-    
+        font-weight: normal;
+
     }
 
 }
@@ -831,7 +827,7 @@ section {
         top: 99%;
         left: 0;
         right: 0;
-        background-color: #fff;
+        background-color: var(--blue);
         border-top: var(--border);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
@@ -841,9 +837,14 @@ section {
     }
 
     .header .navbar a {
+        /* color:var(--yellow); */
         display: block;
         font-size: 2rem;
         margin: 2rem;
+    }
+
+    .header .navbar a:hover {
+        color: var(--yellow);
     }
 
     #menu-btn {
@@ -851,7 +852,8 @@ section {
     }
 
     #menu-btn.fa-times {
-        color: #130f40;
+
+        color: var(--yellow);
         transform: rotate(180deg);
     }
 
