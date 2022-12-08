@@ -59,7 +59,7 @@ section {
 .heading {
     text-align: center;
     font-size: 4rem;
-    color: var(--black-dark);
+    color: var(--blue);
     padding-bottom: 2rem;
 }
 
@@ -78,7 +78,7 @@ section {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: var(--green);
+    background: var(--yellow);
     /* To understand clip-path: https://ishadeed.com/article/clip-path/#:~:text=The%20clip-path%20values%201%20Inset%20The%20inset%20value,the%20most%20interesting%20one.%20...%205%20Path%20 */
     clip-path: polygon(0% 90%, 100% 40%, 100% 100%, 0% 100%);
 }
@@ -274,45 +274,46 @@ section {
     cursor: pointer;
 }
 
-.home {
+
+
+
+
+.home{
     padding-top: 10rem;
     text-align: center;
     overflow-x: hidden;
     background-color: var(--blue);
 }
 
-.home h1 {
-    /* margin-top: 5rem; */
-    text-transform: uppercase;
+
+.home h3{
+    margin-top: 3rem;
+    color:#FFFFFF;
     /* vw: 
        The full form of VW is viewport width. It works like the percentage unit. 
        Specifying 10vw is equivalent to occupying 10% of entire visible screen width. 
     */
-    font-size: 4.7vw;
-    color: var(--blue);
-    font-family: 'Signika Negative', sans-serif;
-
-
-}
-
-.home h1 span {
-    margin-top: 5rem;
+    font-size: 3vw;
     text-transform: uppercase;
+}
+.home h3 span {
+    color:var(--yellow);
     /* vw: 
        The full form of VW is viewport width. It works like the percentage unit. 
        Specifying 10vw is equivalent to occupying 10% of entire visible screen width. 
     */
-    font-size: 5vw;
-    color: var(--green);
-    font-family: 'Signika Negative', sans-serif;
+    font-size: 4vw;
+    text-transform: uppercase;
 }
 
-.home img {
-    width: 100%;
-    /* border: var(--border);
-    box-shadow: var(--box-shadow); */
-    margin: 1rem 0;
+
+
+
+.home img{
+    width:100%;
+    margin:1rem 0;
 }
+
 
 
 .icons-container {
@@ -469,11 +470,13 @@ section {
     background-color: var(--green);
 }
 
-
+/* .services{
+    background-color: var(--blue);
+} */
 
 .services .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     gap: 1.5rem;
 
 }
@@ -521,11 +524,22 @@ section {
 }
 
 .services .box-container .box:hover h3 {
-    color: #fff;
+    color: var(--yellow);
 }
 
 .services .box-container .box:hover p {
     color: #eee;
+}
+
+.services .box-container .box:hover i {
+    color: #eee;
+
+}
+
+.services .box-container .box:hover .btn {
+    background-color: var(--yellow);
+
+    color: var(--blue);
 }
 
 
@@ -659,8 +673,8 @@ section {
 
 
 .reviews .reviews-slider .box img {
-    width: 7rem;
-    height: 7rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
     margin-bottom: 1rem;
 }
@@ -726,11 +740,12 @@ section {
 .contact .row .form:hover .logo {
     color: #FFFFFF;
 }
-.contact .row .form:hover .details .owner .name 
-{
+
+.contact .row .form:hover .details .owner .name {
     color: #FFFFFF;
 
 }
+
 .contact .row .form span {
     color: var(--yellow);
     font-size: 4.2rem;
@@ -750,9 +765,11 @@ section {
     margin-top: 1rem;
     font-size: 1.8rem;
 }
+
 .contact .row .form:hover .address {
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
+
 .contact .row .form .details .owner {
     flex: 1 1 0;
     margin: auto;
@@ -769,14 +786,17 @@ section {
 }
 
 .contact .row .form:hover .details .car .box i {
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
-.contact .row .form:hover .details .car .box i span{
-    color:#FFFFFF;
+
+.contact .row .form:hover .details .car .box i span {
+    color: #FFFFFF;
 }
-.contact .row .form:hover .details .car .box div{
-    color:var(--yellow);
+
+.contact .row .form:hover .details .car .box div {
+    color: var(--yellow);
 }
+
 .contact .row .form .details .car .box div:hover {
     font-size: 2.2rem;
     color: var(--yellow);
