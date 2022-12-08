@@ -705,21 +705,32 @@ section {
     text-align: center;
 }
 
-.contact .row .form h3 {
+.contact .row .form:hover {
+    background-color: var(--blue);
+}
+
+/* .contact .row .form h3 {
     color: var(--black-dark);
     font-size: 2.5rem;
-}
+} */
 
 
 .contact .row .form .logo {
     font-size: 3rem;
     color: var(--blue);
 
-    /* font-weight: bolder; */
     font-family: 'Signika Negative', sans-serif;
 
 }
 
+.contact .row .form:hover .logo {
+    color: #FFFFFF;
+}
+.contact .row .form:hover .details .owner .name 
+{
+    color: #FFFFFF;
+
+}
 .contact .row .form span {
     color: var(--yellow);
     font-size: 4.2rem;
@@ -739,7 +750,9 @@ section {
     margin-top: 1rem;
     font-size: 1.8rem;
 }
-
+.contact .row .form:hover .address {
+    color:#FFFFFF;
+}
 .contact .row .form .details .owner {
     flex: 1 1 0;
     margin: auto;
@@ -750,6 +763,34 @@ section {
 .contact .row .form .details .car {
     flex: 2 1 0;
 }
+
+.contact .row .form .details .car .box i {
+    color: var(--blue);
+}
+
+.contact .row .form:hover .details .car .box i {
+    color:#FFFFFF;
+}
+.contact .row .form:hover .details .car .box i span{
+    color:#FFFFFF;
+}
+.contact .row .form:hover .details .car .box div{
+    color:var(--yellow);
+}
+.contact .row .form .details .car .box div:hover {
+    font-size: 2.2rem;
+    color: var(--yellow);
+}
+
+.contact .row .form .details .car .box i span {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.contact .row .form .details .car .box a i {
+    margin: 0 1rem;
+}
+
 
 .contact .row .form .details .owner .name {
     font-size: 3rem;
